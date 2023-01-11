@@ -1,4 +1,13 @@
 .App {
   text-align: center;
-  height:100%;
+  background-image:url("https://cdn.pixabay.com/photo/2016/11/18/12/55/office-1834294_960_720.jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.home {
+  text-align: center;
 }
