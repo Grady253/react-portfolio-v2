@@ -12,6 +12,17 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Home() {
+  const onButtonClick = () =>{
+    fetch('Resume.pdf').then(response => {
+      response.blob().then(blob =>{
+        const pdfURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement('a');
+        alink.href = pdfURL;
+        alink.download = "Resume.pdf";
+        alink.click();
+      })
+    })
+  }
   return (
     <Container maxWidth="md">
       <section className="home">
@@ -45,7 +56,7 @@ export default function Home() {
                 <LinkedInIcon sx={{ fontSize: "40px" }} />
               </Link>
             </IconButton>
-            <Button variant="contained">
+            <Button variant="contained" onClick={onButtonClick}>
               Resume
             </Button>
           </Stack>
