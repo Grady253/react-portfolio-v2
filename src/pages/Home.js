@@ -11,6 +11,7 @@ import TypewriterComponent from "typewriter-effect";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
+
 export default function Home() {
   const onButtonClick = () =>{
     fetch('Resume.pdf').then(response => {
@@ -22,7 +23,7 @@ export default function Home() {
         alink.click();
       })
     })
-  }
+  };
   return (
     <Container maxWidth="md">
       <section className="home">
@@ -56,7 +57,7 @@ export default function Home() {
                 <LinkedInIcon sx={{ fontSize: "40px" }} />
               </Link>
             </IconButton>
-            <Button variant="contained" onClick={onButtonClick}>
+            <Button sx={{border:"solid 1px"}} size="medium" variant="contained" onClick={onButtonClick}>
               Resume
             </Button>
           </Stack>
