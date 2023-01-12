@@ -10,6 +10,7 @@ import {
 import TypewriterComponent from "typewriter-effect";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 export default function Home() {
@@ -61,6 +62,8 @@ export default function Home() {
               Resume
             </Button>
           </Stack>
+          
+          <KeyboardArrowDownIcon sx={{fontSize:"90px" }} id="arrow" />
         </div>
       </section>
     </Container>
