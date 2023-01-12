@@ -9,7 +9,7 @@
 }
 
 .home {
-  margin-top: 300px;
+  margin-top: 260px;
 }
 
 .icon-place{
@@ -19,4 +19,14 @@
 #arrow{
   margin-right: 300px;
   margin-top: 40px;
+}
+
+#andre{
+  height: 380px;
+  margin-right: 80rem;
+  margin-top: 140px;
+}
+.about-Me{
+  background-color: white;
+  width: 100%;
 }
