@@ -1,8 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
 import { Container, createTheme } from "@mui/material";
-// import background from './photos/background.jpg';
 import "./App.css";
-import About from "./pages/About";
+// import About from "./pages/About";
 import Home from "./pages/Home";
 
 const theme = createTheme({
@@ -22,7 +21,6 @@ function App() {
       <div className="App">
         <Container maxWidth>
           <Home />
-          <About />
         </Container>
       </div>
     </ThemeProvider>

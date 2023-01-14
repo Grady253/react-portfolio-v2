@@ -37,7 +37,7 @@ export default function Home() {
             }}
           />
         </Typography>
-        <Typography sx={{fontSize:"50px"}}>Software Engineer</Typography>
+        <Typography sx={{fontSize:"50px", color:'white'}}>Software Engineer</Typography>
         <div className="icon-place">
           <Stack
             direction="row"

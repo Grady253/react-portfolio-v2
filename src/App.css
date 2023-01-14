@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image:url("https://cdn.pixabay.com/photo/2016/11/18/12/55/office-1834294_960_720.jpg");
+  background-image:url("https://cdn.pixabay.com/photo/2019/10/20/11/51/mountains-4563464_960_720.jpg");
   position: fixed;
   min-width: 100%;
   min-height: 100%;
@@ -25,8 +25,4 @@
   height: 380px;
   margin-right: 80rem;
   margin-top: 140px;
-}
-.about-Me{
-  background-color: white;
-  width: 100%;
 }
