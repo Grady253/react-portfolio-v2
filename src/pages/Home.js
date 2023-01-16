@@ -38,18 +38,21 @@ export default function Home() {
           />
         </Typography>
         <Typography sx={{fontSize:"50px", color:'white'}}>Software Engineer</Typography>
-        <div className="icon-place">
           <Stack
             direction="row"
             spacing={4}
             mt={6}
-            divider={<Divider orientation="vertical" color="black" flexItem />}
+            divider={<Divider orientation="vertical" color="white" flexItem />}
+            style={{justifyContent:"center"}}
           >
             <IconButton sx={{ color: "black" }}>
               <Link href="https://github.com/Grady253" sx={{color:"#171515"}}>
                 <GitHubIcon sx={{ fontSize: "40px" }} />
               </Link>
             </IconButton>
+            <Button sx={{border:"solid 1px"}} size="medium" variant="contained" onClick={onButtonClick}>
+              Resume
+            </Button>
             <IconButton sx={{ color: "black" }}>
               <Link
                 href="https://www.linkedin.com/in/andre-grady-a70237190/"
@@ -58,13 +61,9 @@ export default function Home() {
                 <LinkedInIcon sx={{ fontSize: "40px" }} />
               </Link>
             </IconButton>
-            <Button sx={{border:"solid 1px"}} size="medium" variant="contained" onClick={onButtonClick}>
-              Resume
-            </Button>
           </Stack>
           
-          <KeyboardArrowDownIcon sx={{fontSize:"90px" }} id="arrow" />
-        </div>
+          <KeyboardArrowDownIcon sx={{fontSize:"90px", color:'white', justifyContent:'center', mt:'200px' }} id="arrow" />
       </section>
     </Container>
   );

@@ -1,25 +1,20 @@
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-image:url("https://cdn.pixabay.com/photo/2019/10/20/11/51/mountains-4563464_960_720.jpg");
   position: fixed;
-  min-width: 100%;
-  min-height: 100%;
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .home {
   margin-top: 260px;
 }
 
-.icon-place{
-  margin-left: 250px;
-}
-
-#arrow{
-  margin-right: 300px;
-  margin-top: 40px;
-}
 
 #andre{
   height: 380px;

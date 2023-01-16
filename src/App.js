@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
 import { Container, createTheme } from "@mui/material";
 import "./App.css";
+import About from "./pages/About";
 // import About from "./pages/About";
 import Home from "./pages/Home";
 
@@ -21,6 +22,7 @@ function App() {
       <div className="App">
         <Container maxWidth>
           <Home />
+          <About />
         </Container>
       </div>
     </ThemeProvider>
