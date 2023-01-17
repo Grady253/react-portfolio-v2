@@ -16,10 +16,19 @@
   margin-top: 260px;
 }
 
+a{
+  color: white;
+}
+
+a:hover{
+  color: #F2AF29;
+}
 
 #andre{
-  height: 500px;
+  height: 700px;
+  border-radius: 25% 0 25% 0;
 float: right;
+padding-bottom: 50px;
 }
 
 .about-Me{
@@ -29,7 +38,7 @@ float: right;
 
 #about-Text{
   float: right;
-
+  padding-right: 75px;
 }
 
 #arrow:hover{
