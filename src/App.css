@@ -4,10 +4,11 @@
   justify-content: center;
   text-align: center;
   background-image:url("https://cdn.pixabay.com/photo/2019/10/20/11/51/mountains-4563464_960_720.jpg");
-  position: fixed;
+  position: relative;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  background-repeat: no-repeat;
+  height: 100%;
   width: 100%;
 }
 
@@ -20,4 +21,11 @@
   height: 380px;
   margin-right: 80rem;
   margin-top: 140px;
+}
+
+.about-Me{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
