@@ -46,7 +46,7 @@ export default function Home() {
             style={{justifyContent:"center"}}
           >
             <IconButton sx={{ color: "black" }}>
-              <Link href="https://github.com/Grady253" sx={{color:"#171515"}}>
+              <Link href="https://github.com/Grady253" sx={{color:"white"}}>
                 <GitHubIcon sx={{ fontSize: "40px" }} />
               </Link>
             </IconButton>
