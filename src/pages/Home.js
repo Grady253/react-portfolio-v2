@@ -53,6 +53,7 @@ export default function Home() {
             </a>
           </IconButton>
           <Button
+            id="resume"
             sx={{ border: "solid 1px" }}
             size="medium"
             variant="contained"

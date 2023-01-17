@@ -16,31 +16,33 @@
   margin-top: 260px;
 }
 
-a{
+a {
   color: white;
 }
 
-a:hover{
-  color: #F2AF29;
+a:hover,
+#arrow:hover {
+  color: #f2af29;
 }
 
-#andre{
+#resume:hover {
+  background-color: white;
+}
+
+#andre {
   height: 700px;
   border-radius: 25% 0 25% 0;
-float: right;
-padding-bottom: 50px;
+  float: right;
+  padding-bottom: 50px;
 }
 
-.about-Me{
+.about-Me {
   display: flex;
   align-items: center;
 }
 
-#about-Text{
+#about-Text {
   float: right;
   padding-right: 75px;
-}
-
-#arrow:hover{
-  color: #F2AF29;
+  margin-bottom: 440px;
 }
