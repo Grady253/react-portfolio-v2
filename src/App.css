@@ -18,14 +18,20 @@
 
 
 #andre{
-  height: 380px;
-  margin-right: 80rem;
-  margin-top: 140px;
+  height: 500px;
+float: right;
 }
 
 .about-Me{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
 
+#about-Text{
+  float: right;
+
+}
+
+#arrow:hover{
+  color: #F2AF29;
 }
