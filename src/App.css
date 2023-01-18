@@ -30,10 +30,15 @@ a:hover,
 }
 
 #andre {
-  height: 700px;
+  height: 600px;
   border-radius: 25% 0 25% 0;
   float: right;
   padding-bottom: 50px;
+}
+
+#about-title{
+  text-decoration: underline #f2af29;
+  text-decoration-style: wavy;
 }
 
 .about-Me {
