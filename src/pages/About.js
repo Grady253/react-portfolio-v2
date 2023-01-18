@@ -7,7 +7,7 @@ export default function About() {
   return (
     <Container maxWidth="xl">
       <div id="about">
-        <Typography variant="h2" color="white" id='about-title' sx={{ mb: 20, mt: 30, fontWeight:'bold' }} >
+        <Typography variant="h2" color="white" id='about-title' sx={{ mb: 20, mt: 45, fontWeight:'bold' }} >
           About Me
         </Typography>
         <section className="about-Me">
@@ -25,7 +25,7 @@ export default function About() {
 
         </section>
         <IconButton>
-          <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+          <Link to="portfolio" spy={true} smooth={true} offset={50} duration={500}>
             <KeyboardArrowDownIcon
               sx={{
                 fontSize: "90px",

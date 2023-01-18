@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./pages/About";
 // import About from "./pages/About";
 import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 
 const theme = createTheme({
   palette: {
@@ -23,6 +24,7 @@ function App() {
         <Container maxWidth>
           <Home />
           <About />
+          <Portfolio />
         </Container>
     </ThemeProvider>
       </div>
