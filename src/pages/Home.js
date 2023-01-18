@@ -36,7 +36,7 @@ export default function Home() {
             }}
           />
         </Typography>
-        <Typography sx={{ fontSize: "50px", color: "white" }}>
+        <Typography sx={{ fontSize: "50px", color: "white" }} id='home-title'>
           Software Engineer
         </Typography>
         <Stack

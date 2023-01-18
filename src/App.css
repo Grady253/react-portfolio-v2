@@ -16,6 +16,10 @@
   margin-top: 260px;
 }
 
+#home-title{
+  text-shadow: #f2af29 4px 3px 10px;
+}
+
 a {
   color: white;
 }
@@ -34,11 +38,13 @@ a:hover,
   border-radius: 25% 0 25% 0;
   float: right;
   padding-bottom: 50px;
+  box-shadow: #f2af29 4px 10px 20px 10px;
 }
 
 #about-title{
   text-decoration: underline #f2af29;
-  text-decoration-style: wavy;
+  /* text-decoration-style: wavy; */
+  text-shadow: #f2af29 4px 3px 10px;
 }
 
 .about-Me {
