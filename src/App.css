@@ -36,8 +36,7 @@ a:hover,
 #andre {
   height: 600px;
   border-radius: 25% 0 25% 0;
-  float: right;
-  padding-bottom: 50px;
+  margin-bottom: 370px;
   box-shadow: #f2af29 4px 10px 20px 10px;
 }
 
@@ -53,7 +52,11 @@ a:hover,
 }
 
 #about-Text {
-  float: right;
+  float: left;
   padding-right: 75px;
   margin-bottom: 440px;
+}
+
+#skill-box{
+  box-shadow: #f2af29 4px 10px 20px 10px;
 }
