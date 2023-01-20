@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image:url("https://cdn.pixabay.com/photo/2019/10/20/11/51/mountains-4563464_960_720.jpg");
+  /* background-image:url("https://cdn.pixabay.com/photo/2019/10/20/11/51/mountains-4563464_960_720.jpg"); */
+  background-color: #1A1A1D;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -34,15 +35,18 @@ a:hover,
 }
 
 #andre {
-  height: 600px;
+  height: 750px;
   border-radius: 25% 0 25% 0;
-  margin-bottom: 370px;
+  filter: grayscale(100%);
+}
+
+#andre:hover{
   box-shadow: #f2af29 4px 10px 20px 10px;
+  filter: grayscale(0%);
 }
 
 #about-title{
   text-decoration: underline #f2af29;
-  /* text-decoration-style: wavy; */
   text-shadow: #f2af29 4px 3px 10px;
 }
 
@@ -51,12 +55,3 @@ a:hover,
   align-items: center;
 }
 
-#about-Text {
-  float: left;
-  padding-right: 75px;
-  margin-bottom: 440px;
-}
-
-#skill-box{
-  box-shadow: #f2af29 4px 10px 20px 10px;
-}

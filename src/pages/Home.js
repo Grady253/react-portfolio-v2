@@ -36,7 +36,7 @@ export default function Home() {
             }}
           />
         </Typography>
-        <Typography sx={{ fontSize: "50px", color: "white" }} id='home-title'>
+        <Typography sx={{ fontSize: "50px", color: "white" }} id="home-title">
           Software Engineer
         </Typography>
         <Stack
@@ -47,7 +47,12 @@ export default function Home() {
           style={{ justifyContent: "center" }}
         >
           <IconButton sx={{ color: "black" }}>
-            <a href="https://github.com/Grady253" sx={{ color: "white" }}>
+            <a
+              href="https://github.com/Grady253"
+              target="_blank"
+              rel="noreferrer"
+              sx={{ color: "white" }}
+            >
               <GitHubIcon sx={{ fontSize: "40px" }} />
             </a>
           </IconButton>
@@ -62,6 +67,8 @@ export default function Home() {
           </Button>
           <IconButton sx={{ color: "black" }}>
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/andre-grady-a70237190/"
               sx={{ color: "#0A66C2" }}
             >
