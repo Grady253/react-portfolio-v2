@@ -55,3 +55,13 @@ a:hover,
   align-items: center;
 }
 
+#about-Text{
+  margin-bottom: 250px;
+}
+
+#tech-list{
+  list-style-type:">";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+

@@ -38,11 +38,22 @@ export default function About() {
                   forward to being an asset to the team.
                 </p>
                 <p>
-                  Outside of coding, I love to play video games, watch football,
-                  and cook.
+                  Outside of coding, I enjoy to play video games, watch football, enjot nature,
+                  read books and cook.
                 </p>
                 <p>
                   <u>Here are a few of the technologies I've worked with:</u>
+                  <ul id="tech-list">
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React Js</li>
+                    <li>Node Js</li>
+                    <li>NPM</li>
+                    <li>MySQL</li>
+                    <li>NoSQL</li>
+                    <li>MongoDb</li>
+                  </ul>
                 </p>
               </Typography>
             </Box>
