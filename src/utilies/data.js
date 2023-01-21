@@ -16,7 +16,7 @@ const data = [
     id: 2,
     title: "Password Generator",
     description:
-      "This is an appllication that allows the user to generate a random password.",
+      "This is an appllication that will ask the user a series of questions and then to generate a random password with the requirements the user selected.",
     image: Generator,
     repository: "https://github.com/Grady253/generate-password",
     url: "https://grady253.github.io/generate-password/",

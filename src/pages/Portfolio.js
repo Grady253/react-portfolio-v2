@@ -1,8 +1,9 @@
-import { Container, Typography } from "@mui/material";
+import { Button, Card, CardActions, CardContent, CardMedia, Container, Typography } from "@mui/material";
+import projectData from "../utilies/data";
 
 export default function Portfolio() {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="xl">
       <div id="portfolio">
         <Typography
           variant="h2"
@@ -12,7 +13,26 @@ export default function Portfolio() {
         >
           Portfolio
         </Typography>
-        
+        <div className="cards">
+          {projectData.map(({title, description, image, respository, url})=>(
+            <Card sx={{maxWidth:700, height:500, borderRadius:10,border:"9px solid white", position:'relative'}}>
+              <CardMedia
+                id='card-image'
+                component='img'
+                image={image}
+                alt=''
+              />
+              <CardContent className="card-body">
+                <Typography className="card-title" variant="h3" component='div'>{title}</Typography>
+                <Typography className="card-info"  variant='h6' component='p'>{description}</Typography>
+                <CardActions className="card-btn">
+                  <Button  variant="contained" size='large' href={respository} target='_blank'>Repo</Button>
+                  <Button variant="contained" size='large' href={url} target='_blank'>Live</Button>
+                </CardActions>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </Container>
   );

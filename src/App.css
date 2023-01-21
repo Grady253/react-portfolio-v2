@@ -65,3 +65,61 @@ a:hover,
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.cards{
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-body{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(128, 128, 128, 0);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.cards:hover .card-body{
+  right: 0;
+}
+
+.card-title{
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.card-info{
+  font-size: 18px;
+  line-height: 25px;
+  padding: 10px 50px ;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.card-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding: 10px 20px;
+ border-radius: 5px;
+ text-transform: uppercase;
+ font-weight: 500;
+ cursor: pointer;
+}

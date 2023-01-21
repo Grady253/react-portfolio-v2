@@ -38,8 +38,8 @@ export default function About() {
                   forward to being an asset to the team.
                 </p>
                 <p>
-                  Outside of coding, I enjoy to play video games, watch football, enjot nature,
-                  read books and cook.
+                  Outside of coding, I enjoy playing video games, watching football, enjoying nature,
+                  reading books and cooking.
                 </p>
                 <p>
                   <u>Here are a few of the technologies I've worked with:</u>
