@@ -13,9 +13,9 @@ export default function Portfolio() {
         >
           Portfolio
         </Typography>
-        <div className="cards">
           {projectData.map(({title, description, image, respository, url})=>(
-            <Card sx={{maxWidth:700, height:500, borderRadius:10,border:"9px solid white", position:'relative'}}>
+        <div className="cards">
+            <Card sx={{maxWidth:600, height:400, borderRadius:10,border:"9px solid white", position:'relative'}}>
               <CardMedia
                 id='card-image'
                 component='img'
@@ -31,8 +31,8 @@ export default function Portfolio() {
                 </CardActions>
               </CardContent>
             </Card>
-          ))}
         </div>
+          ))}
       </div>
     </Container>
   );
