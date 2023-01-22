@@ -50,8 +50,8 @@ export default function About() {
                     <li>React Js</li>
                     <li>Node Js</li>
                     <li>NPM</li>
+                    <li>JQuery</li>
                     <li>MySQL</li>
-                    <li>NoSQL</li>
                     <li>MongoDb</li>
                   </ul>
                 </p>
