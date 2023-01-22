@@ -30,7 +30,7 @@ export default function Home() {
         <Typography sx={{ fontSize: "130px" }} color={"primary.main"}>
           <TypewriterComponent
             options={{
-              strings: ["Andre' Grady"],
+              strings: ["Andre' Grady", "Creative", "Determined", "Versatile"],
               autoStart: true,
               loop: true,
             }}
