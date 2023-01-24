@@ -31,6 +31,10 @@ a:hover,
   color: #f2af29;
 }
 
+#arrow:hover {
+  animation: bounce 1.5s linear ;
+}
+
 #resume:hover {
   background-color: white;
 }
@@ -80,6 +84,21 @@ a:hover,
   font-weight: 500;
   cursor: pointer;
 } 
+
+@keyframes bounce{
+  20%,50%,80%,to{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-30px);
+  }
+  70%{
+    transform: translateY(-15px);
+  }
+  90%{
+    transform: translateY(-4px);
+  }
+}
 
 
 /* .cards{
