@@ -4,7 +4,8 @@
   justify-content: center;
   text-align: center;
   /* background-image:url("https://cdn.pixabay.com/photo/2019/10/20/11/51/mountains-4563464_960_720.jpg"); */
-  background-color: #1A1A1D;
+  /* background-color: #1A1A1D; */
+  background-image: linear-gradient(to  bottom right,#000000,#434343);
   position: relative;
   background-size: cover;
   background-position: center;
@@ -65,7 +66,23 @@ a:hover,
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.cards{
+.portfolio{
+  display: flex;
+}
+
+.card-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+} 
+
+
+/* .cards{
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -117,9 +134,10 @@ a:hover,
   display: flex;
   justify-content: center;
   align-items: center;
- padding: 10px 20px;
- border-radius: 5px;
- text-transform: uppercase;
- font-weight: 500;
- cursor: pointer;
-}
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}  */
+
