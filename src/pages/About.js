@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Typography, Container, IconButton, Box } from "@mui/material";
+import { Typography, Container, IconButton, Box, Grid } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link } from "react-scroll/modules";
 import Andre from "../photos/Andre.png";
@@ -17,12 +17,16 @@ export default function About() {
           About Me
         </Typography>
         <section className="about-Me">
+          <Grid container spacing={3} justifyContent="space-evenly">
+          <Grid item xs={12} sm={8} md={4}>
           <div id="about-picture">
             <img alt="Andre sitting down" src={Andre} id="andre" />
           </div>
+          </Grid>
+          <Grid item xs={12} sm={8} md={4}>
           <div id="about-Text">
-            <Box sx={{ width: 650, height: 500, ml: 40 }}>
-              <Typography color="white" sx={{ fontSize: "25px" }}>
+            <Box >
+              <Typography color="white" sx={{ fontSize: "23px" }}>
                 <p>
                   Hi, my name is Andre' Grady. I'm a 24 year old software
                   engineer who recently graduated from the intensive University
@@ -58,6 +62,8 @@ export default function About() {
               </Typography>
             </Box>
           </div>
+          </Grid>
+          </Grid>
         </section>
         <IconButton>
           <Link
