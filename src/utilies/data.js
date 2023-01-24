@@ -1,6 +1,8 @@
 import Planner from "../photos/DailyPlanner.png";
 import Music from "../photos/Music-Match.png";
 import Generator from "../photos/PasswordGenerator.png";
+import Quiz from "../photos/JavascriptQuiz.png";
+
 
 const data = [
   {
@@ -30,6 +32,14 @@ const data = [
     repository: "https://github.com/KarlOL82/music-match",
     url: "https://groove-connection.herokuapp.com/",
   },
+  {
+    id:4,
+    title:"Javascript Quiz Game",
+    description:"A short quiz to text your knowledge.",
+    image:Quiz,
+    repsitory:"https://github.com/Grady253/timed_quiz",
+    url:"https://grady253.github.io/timed_quiz/"
+  }
 ];
 
 export default data;

@@ -28,7 +28,7 @@ export default function Portfolio() {
         >
           Portfolio
         </Typography>
-        <Box
+        <Box 
           component="div"
           sx={{
             display: "flex",

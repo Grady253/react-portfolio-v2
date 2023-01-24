@@ -66,20 +66,10 @@ a:hover,
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 500;
-  cursor: pointer;
-} 
 
 #card-image{
   object-fit: scale-down;
-  margin: 7px;
+  margin-top: 5px;
   background: #ededed;
 }
 
