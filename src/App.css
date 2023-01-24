@@ -3,9 +3,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* background-image:url("https://cdn.pixabay.com/photo/2019/10/20/11/51/mountains-4563464_960_720.jpg"); */
   /* background-color: #1A1A1D; */
-  background-image: linear-gradient(to  bottom right,#000000,#434343);
+  background-image: linear-gradient(to right bottom,#000000,#555454);
   position: relative;
   background-size: cover;
   background-position: center;
@@ -70,10 +69,6 @@ a:hover,
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.portfolio{
-  display: flex;
-}
-
 .card-btn{
   display: flex;
   justify-content: center;
@@ -84,6 +79,13 @@ a:hover,
   font-weight: 500;
   cursor: pointer;
 } 
+
+#card-image{
+  object-fit: scale-down;
+  border-radius: 15px;
+  margin: 7px;
+  background: #ededed;
+}
 
 @keyframes bounce{
   20%,50%,80%,to{
@@ -99,64 +101,3 @@ a:hover,
     transform: translateY(-4px);
   }
 }
-
-
-/* .cards{
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-}
-
-#card-image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.card-body{
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: -100%;
-  position: absolute;
-  background: rgba(128, 128, 128, 0);
-  backdrop-filter: blur(5px);
-  border-radius: 15px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 2s;
-}
-
-.cards:hover .card-body{
-  right: 0;
-}
-
-.card-title{
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 500;
-}
-
-.card-info{
-  font-size: 18px;
-  line-height: 25px;
-  padding: 10px 50px ;
-  margin: 40px 0;
-  font-weight: 400;
-}
-
-.card-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 500;
-  cursor: pointer;
-}  */
-

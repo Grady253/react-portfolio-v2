@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Button,
   Card,
@@ -7,10 +8,12 @@ import {
   Typography,
   Grid,
   Box,
+  CardActionArea,
 } from "@mui/material";
 import projectData from "../utilies/data";
 
 export default function Portfolio() {
+  
   return (
     <section id="portfolio">
       <Typography
@@ -21,72 +24,37 @@ export default function Portfolio() {
       >
         Portfolio
       </Typography>
-      <Box sx={{ flexGrow: 1, padding: 5 }}>
-        <Grid
-          container
-          spacing={2}
-          direction="row"
-          justifyContent="center"
-          align="center"
-        >
-          {projectData.map(
-            ({ title, description, image, respository, url }) => (
-              <Grid item xs={2} sm={4} md={4}>
-                <Card
-                  sx={{
-                    height: 550,
-                    width: 400,
-                    borderRadius: 10,
-                    border: "9px solid primary",
-                  }}
-                >
-                  <CardMedia
-                    id="card-image"
-                    component="img"
-                    image={image}
-                    alt=""
-                  />
-                  <div className="content">
-                    <CardContent>
-                      <Typography
-                        className="card-title"
-                        variant="h3"
-                        component="div"
-                      >
-                        {title}
-                      </Typography>
-                      <Typography
-                        className="card-info"
-                        variant="h6"
-                        component="p"
-                      >
-                        {description}
-                      </Typography>
-                      <CardActions className="card-btn">
-                        <Button
-                          variant="contained"
-                          size="large"
-                          href={respository}
-                          target="_blank"
-                        >
-                          Repo
-                        </Button>
-                        <Button
-                          variant="contained"
-                          size="large"
-                          href={url}
-                          target="_blank"
-                        >
-                          Live
-                        </Button>
-                      </CardActions>
-                    </CardContent>
-                  </div>
-                </Card>
-              </Grid>
-            )
-          )}
-        </Grid>
+      <Box component='div' sx={{display:'flex',justifyContent:"center", alignItems:"center"}}>
+      <Grid container spacing={4} >
+        {projectData.map(({title, description, image, url})=>(
+          <Grid item xs={10} sm={6} md={4}>
+          <Card sx={{width:345}}>
+            <CardActionArea >
+            <CardMedia 
+              id='card-image'
+              component='img'
+              height='150'
+              src={image}
+              alt='Projects'
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5">
+                {title}
+              </Typography>
+              <Typography variant="body2" color='textSecondary' component='p'>
+                {description}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="medium" href={url} target='_blank'>
+                Live Demo
+              </Button>
+            </CardActions>
+            </CardActionArea>
+          </Card>
+          </Grid>
+        ))}
+      </Grid>
       </Box>
     </section>
   );

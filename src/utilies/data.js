@@ -7,7 +7,7 @@ const data = [
     id: 1,
     title: "Daily Planner",
     description:
-      "This is an application that allows the user to plan out their daily task with a color coordination of time to keep them on track.",
+      "Plan your daily task with a color coordination of time to keep you on track.",
     image: Planner,
     repository: "https://github.com/Grady253/daily_planner",
     url: "https://grady253.github.io/daily_planner/",
@@ -16,7 +16,7 @@ const data = [
     id: 2,
     title: "Password Generator",
     description:
-      "This is an appllication that will ask the user a series of questions and then to generate a random password with the requirements the user selected.",
+      "Generate a random password after you answer a series of questions.",
     image: Generator,
     repository: "https://github.com/Grady253/generate-password",
     url: "https://grady253.github.io/generate-password/",
@@ -25,7 +25,7 @@ const data = [
     id: 3,
     title: "Music Match",
     description:
-      "This is an app that built to allow musicians and artist make connections. ",
+      "A way to connect musicians and producers to transform talents to the next step.",
     image: Music,
     repository: "https://github.com/KarlOL82/music-match",
     url: "https://groove-connection.herokuapp.com/",
