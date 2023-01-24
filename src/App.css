@@ -82,7 +82,6 @@ a:hover,
 
 #card-image{
   object-fit: scale-down;
-  border-radius: 15px;
   margin: 7px;
   background: #ededed;
 }
