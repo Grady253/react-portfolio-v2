@@ -10,8 +10,11 @@ import {
   Box,
   CardActionArea,
   Container,
+  Link,
+  IconButton
 } from "@mui/material";
 import projectData from "../utilies/data";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export default function Portfolio() {
   return (
@@ -73,6 +76,19 @@ export default function Portfolio() {
             ))}
           </Grid>
         </Box>
+        <IconButton>
+          <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+            <KeyboardArrowDownIcon
+              sx={{
+                fontSize: "90px",
+                color: "white",
+                justifyContent: "center",
+                mt: "200px",
+              }}
+              id="arrow"
+            />
+          </Link>
+        </IconButton>
       </Container>
     </section>
   );
