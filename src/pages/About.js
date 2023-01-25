@@ -26,7 +26,7 @@ export default function About() {
           <Grid item xs={12} sm={8} md={4}>
           <div id="about-Text">
             <Box >
-              <Typography color="white" sx={{ fontSize: "23px" }}>
+              <Typography color="white" component='p' sx={{ fontSize: "23px" }}>
                 <p>
                   Hi, my name is Andre' Grady. I'm a 24 year old software
                   engineer who recently graduated from the intensive University

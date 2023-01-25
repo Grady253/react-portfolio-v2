@@ -73,6 +73,30 @@ a:hover,
   background: #ededed;
 }
 
+#contact{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactHeader{
+  margin-top: 65px;
+}
+
+#contactText{
+  margin-top: 60px;
+}
+
+#contactBtn{
+  margin-top: 40px;
+  height: 90px;
+  width: 190px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
 @keyframes bounce{
   20%,50%,80%,to{
     transform: translateY(0);
