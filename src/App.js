@@ -1,8 +1,8 @@
+import "./App.css";
 import { ThemeProvider } from "@emotion/react";
 import { Container, createTheme } from "@mui/material";
-import "./App.css";
 import About from "./pages/About";
-// import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 
@@ -25,6 +25,7 @@ function App() {
           <Home />
           <About />
           <Portfolio />
+          <Contact />
         </Container>
     </ThemeProvider>
       </div>

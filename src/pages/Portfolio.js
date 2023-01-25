@@ -83,7 +83,6 @@ export default function Portfolio() {
                 fontSize: "90px",
                 color: "white",
                 justifyContent: "center",
-                mt: "200px",
               }}
               id="arrow"
             />
