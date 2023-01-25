@@ -10,9 +10,9 @@ import {
   Box,
   CardActionArea,
   Container,
-  Link,
   IconButton,
 } from "@mui/material";
+import { Link } from "react-scroll/modules";
 import projectData from "../utilies/data";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -78,7 +78,7 @@ export default function Portfolio() {
         </Box>
         <IconButton>
           <Link
-            to='Contact'
+            to='contact'
             spy={true}
             smooth={true}
             offset={50}

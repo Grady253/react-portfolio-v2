@@ -94,6 +94,13 @@ a:hover,
   width: 190px;
   font-size: 20px;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+#contactBtn:hover{
+  background-color: white;
+  box-shadow: 0 0 35px white;;
 }
 
 
