@@ -5,8 +5,6 @@ export default function Contact() {
   return (
     <section id="contact">
       <Container maxWidth="lg">
-        <div id="contactPage">
-
         <Typography variant="h1" color="primary" id="contactHeader">
         
           Let's Chat!
@@ -21,7 +19,6 @@ export default function Contact() {
           >
             Reach Out
           </Button>
-          </div>
       </Container>
     </section>
   );
