@@ -44,6 +44,12 @@ a:hover,
   filter: grayscale(100%);
 }
 
+@media only screen and (max-width: 500px) {
+  img {
+    width: 100%;
+  }
+}
+
 #andre:hover{
   box-shadow: #f2af29 4px 10px 20px 10px;
   filter: grayscale(0%);
