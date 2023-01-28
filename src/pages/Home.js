@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <Container maxWidth="md">
       <section className="home">
-        <Typography sx={{ fontSize: "130px" }} color={"primary.main"}>
+        <Typography sx={{  typography:{ xs:'h3', sm:'h2', md:'h1'} }} color={"primary.main"}>
           <TypewriterComponent
             options={{
               strings: ["Andre' Grady", "Creative", "Determined", "Versatile"],
