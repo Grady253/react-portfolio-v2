@@ -23,7 +23,7 @@ export default function About() {
             <img alt="Andre sitting down" src={Andre} id="andre" />
           </div>
           </Grid>
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} sm={8} md={4} >
           <div id="about-Text">
             <Box >
               <Typography color="white" component='p' sx={{ fontSize: "23px" }}>
