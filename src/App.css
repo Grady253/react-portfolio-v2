@@ -16,6 +16,7 @@
   margin-top: 250px;
 }
 
+
 #home-title{
   text-shadow: #f2af29 4px 3px 10px;
 }
@@ -47,6 +48,12 @@ a:hover,
   img {
     width: 100%;
   }
+  .home{
+    margin-top: 100px;
+  }
+ #arrow{
+   margin-top: 50px;
+ }
 }
 
 #andre:hover{
