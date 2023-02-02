@@ -28,7 +28,7 @@ export default function Portfolio() {
         >
           Portfolio
         </Typography>
-        <Typography variant="h5" color='white' sx={{mb: 20, mt:4}}>
+        <Typography variant="h5" color='white' sx={{mb: 10, mt:4}}>
           Below are a couple of my personal project that I've built.
         </Typography>
         <Box
