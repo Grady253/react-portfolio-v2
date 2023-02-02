@@ -37,7 +37,7 @@ const data = [
     title:"Javascript Quiz Game",
     description:"A short quiz to test your javascript knowledge. Enjoy!",
     image:Quiz,
-    repsitory:"https://github.com/Grady253/timed_quiz",
+    repository:"https://github.com/Grady253/timed_quiz",
     url:"https://grady253.github.io/timed_quiz/"
   }
 ];

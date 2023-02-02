@@ -24,9 +24,12 @@ export default function Portfolio() {
           variant="h2"
           color="white"
           id="about-title"
-          sx={{ mb: 20, mt: 25, fontWeight: "bold" }}
+          sx={{mt: 25, fontWeight: "bold" }}
         >
           Portfolio
+        </Typography>
+        <Typography variant="h5" color='white' sx={{mb: 20, mt:4}}>
+          Below are a couple of my personal project that I've built.
         </Typography>
         <Box
           component="div"
@@ -37,7 +40,7 @@ export default function Portfolio() {
           }}
         >
           <Grid container spacing={4}>
-            {projectData.map(({ title, description, image, url }) => (
+            {projectData.map(({ title, description, image, repository, url }) => (
               <Grid item xs={10} sm={6} md={4}>
                 <Card sx={{ width: 345 }}>
                   <CardActionArea>
@@ -60,14 +63,22 @@ export default function Portfolio() {
                         {description}
                       </Typography>
                     </CardContent>
-                    <CardActions>
+                    <CardActions id="cardBtn">
                       <Button
                         size="medium"
                         variant="contained"
                         href={url}
                         target="_blank"
                       >
-                        Live Demo
+                        Demo
+                      </Button>
+                      <Button
+                        size="medium"
+                        variant="contained"
+                        href={repository}
+                        target="_blank"
+                      >
+                        Repo
                       </Button>
                     </CardActions>
                   </CardActionArea>
