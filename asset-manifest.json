@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-portfolio-v2/static/css/main.2ddb52b8.css",
-    "main.js": "/react-portfolio-v2/static/js/main.13467f15.js",
+    "main.css": "/react-portfolio-v2/static/css/main.cbd6df1a.css",
+    "main.js": "/react-portfolio-v2/static/js/main.fdc710ce.js",
     "static/media/Andre.png": "/react-portfolio-v2/static/media/Andre.8744c6fe1b711be71ccf.png",
     "static/media/Music-Match.png": "/react-portfolio-v2/static/media/Music-Match.f7f094cb033c222fb4fc.png",
     "static/media/DailyPlanner.png": "/react-portfolio-v2/static/media/DailyPlanner.525c31c83ce287a8281c.png",
     "static/media/PasswordGenerator.png": "/react-portfolio-v2/static/media/PasswordGenerator.393720e1e57ad960e6ca.png",
     "static/media/JavascriptQuiz.png": "/react-portfolio-v2/static/media/JavascriptQuiz.b31b5dd47a6b5b02af7f.png",
     "index.html": "/react-portfolio-v2/index.html",
-    "main.2ddb52b8.css.map": "/react-portfolio-v2/static/css/main.2ddb52b8.css.map",
-    "main.13467f15.js.map": "/react-portfolio-v2/static/js/main.13467f15.js.map"
+    "main.cbd6df1a.css.map": "/react-portfolio-v2/static/css/main.cbd6df1a.css.map",
+    "main.fdc710ce.js.map": "/react-portfolio-v2/static/js/main.fdc710ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ddb52b8.css",
-    "static/js/main.13467f15.js"
+    "static/css/main.cbd6df1a.css",
+    "static/js/main.fdc710ce.js"
   ]
 }
