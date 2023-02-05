@@ -54,10 +54,6 @@ a:hover,
   #arrow {
     margin-top: 50px;
   }
-  #tech-list {
-    display: grid;
-    grid-template-columns: auto;
-  }
 }
 
 #andre:hover {
@@ -82,8 +78,7 @@ a:hover,
 
 #tech-list {
   list-style-type: ">";
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  columns: 3 100px;
 }
 
 #card-image {
