@@ -44,7 +44,7 @@ const data = [
   {
     id:5,
     title:"Mobile Social Card",
-    description:"An application where the user can have multiple links all on application for easier navagation.",
+    description:"An application where the user can have multiple links to all socials for easier navagation.",
     image:socialCard,
     repository:"https://github.com/Grady253/link-Tree",
     url:"https://grady253.github.io/link-Tree/"
