@@ -42,7 +42,7 @@ export default function Portfolio() {
           <Grid container spacing={4}>
             {projectData.map(({ title, description, image, repository, url }) => (
               <Grid item xs={10} sm={6} md={4}>
-                <Card sx={{ width: 345 }}>
+                <Card sx={{ width: 345 }} >
                   <CardActionArea>
                     <CardMedia
                       id="card-image"
