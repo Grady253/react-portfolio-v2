@@ -3,6 +3,7 @@ import Music from "../photos/Music-Match.png";
 import Generator from "../photos/PasswordGenerator.png";
 import Quiz from "../photos/JavascriptQuiz.png";
 import socialCard from "../photos/socialCard.png";
+import dateNight from "../photos/dateNight.png";
 
 
 const data = [
@@ -48,6 +49,13 @@ const data = [
     image:socialCard,
     repository:"https://github.com/Grady253/link-Tree",
     url:"https://grady253.github.io/link-Tree/"
+  },
+  {
+    id:6,
+    title:"Honey & Moon",
+    description:"Having a hard time planning dates? No need to stress anymore.",
+    image:dateNight,
+    url:"https://grady253.github.io/landing-page/"
   }
 ];
 
