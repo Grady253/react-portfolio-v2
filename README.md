@@ -12,5 +12,5 @@ This is my live personal portfolio which is built with React and material UI.
 This is my live website that displays some of my current skills that i've aquired over time, along with some of my projects that I've built. In addition this will also display my resume and my contact information if you want to reach out.
 
 ## Technologies
-*React 
-*Material UI
+* React 
+* Material UI
