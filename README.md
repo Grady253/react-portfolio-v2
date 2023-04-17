@@ -14,3 +14,5 @@ This is my live website that displays some of my current skills that i've aquire
 ## Technologies
 * React 
 * Material UI
+
+## Photos
