@@ -4,6 +4,7 @@ import Generator from "../photos/PasswordGenerator.png";
 import Quiz from "../photos/JavascriptQuiz.png";
 import socialCard from "../photos/socialCard.png";
 import dateNight from "../photos/dateNight.png";
+import trueAgent from "../photos/TrueAgent.png";
 
 
 const data = [
@@ -56,6 +57,14 @@ const data = [
     description:"Having a hard time planning dates? No need to stress anymore.",
     image:dateNight,
     url:"https://grady253.github.io/landing-page/"
+  },
+  {
+    id:7,
+    title:"True Agent",
+    description:"Find your real estate agent at the location you want to move.",
+    image:trueAgent,
+    repository:"https://github.com/Grady253/true-agent",
+    url:"https://grady253.github.io/true-agent/"
   }
 ];
 
