@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/react-portfolio-v2/static/css/main.bdb89059.css",
-    "main.js": "/react-portfolio-v2/static/js/main.f6735aaa.js",
+    "main.js": "/react-portfolio-v2/static/js/main.d7cd6f49.js",
     "static/media/Andre.png": "/react-portfolio-v2/static/media/Andre.8744c6fe1b711be71ccf.png",
+    "static/media/TrueAgent.png": "/react-portfolio-v2/static/media/TrueAgent.5c3cf37b803993969c40.png",
     "static/media/socialCard.png": "/react-portfolio-v2/static/media/socialCard.f1a432c86cf656d5cec9.png",
     "static/media/Music-Match.png": "/react-portfolio-v2/static/media/Music-Match.f7f094cb033c222fb4fc.png",
     "static/media/dateNight.png": "/react-portfolio-v2/static/media/dateNight.02bb5692c5ae08eba05b.png",
@@ -11,10 +12,10 @@
     "static/media/JavascriptQuiz.png": "/react-portfolio-v2/static/media/JavascriptQuiz.b31b5dd47a6b5b02af7f.png",
     "index.html": "/react-portfolio-v2/index.html",
     "main.bdb89059.css.map": "/react-portfolio-v2/static/css/main.bdb89059.css.map",
-    "main.f6735aaa.js.map": "/react-portfolio-v2/static/js/main.f6735aaa.js.map"
+    "main.d7cd6f49.js.map": "/react-portfolio-v2/static/js/main.d7cd6f49.js.map"
   },
   "entrypoints": [
     "static/css/main.bdb89059.css",
-    "static/js/main.f6735aaa.js"
+    "static/js/main.d7cd6f49.js"
   ]
 }
