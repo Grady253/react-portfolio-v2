@@ -3,8 +3,8 @@ import {
   Typography,
   Divider,
   IconButton,
-  Container,
   Button,
+  Box
 } from "@mui/material";
 import { Link } from "react-scroll/modules";
 import TypewriterComponent from "typewriter-effect";
@@ -19,77 +19,80 @@ export default function Home() {
         const pdfURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
         alink.href = pdfURL;
-        alink.download = "Resume.pdf";
+        alink.download = "Andre_Grady_Resume.pdf";
         alink.click();
       });
     });
   };
+
   return (
-    <Container maxWidth="md">
-      <section className="home">
-        <Typography sx={{  typography:{ xs:'h3', sm:'h2', md:'h1'} }} color={"primary.main"}>
-          <TypewriterComponent
-            options={{
-              strings: ["Andre' Grady", "Creative", "Determined", "Versatile"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </Typography>
-        <Typography sx={{ fontSize: "50px", color: "white" }} id="home-title">
-          Software Engineer
-        </Typography>
-        <Stack
-          direction="row"
-          spacing={4}
-          mt={6}
-          divider={<Divider orientation="vertical" color="white" flexItem />}
-          style={{ justifyContent: "center" }}
+    <Box
+      id="home"
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        px: 2,
+      }}
+    >
+      <Typography
+        sx={{ typography: { xs: 'h4', sm: 'h3', md: 'h2' }, fontWeight: 600 }}
+        color="primary.main"
+      >
+        <TypewriterComponent
+          options={{
+            strings: ["Andre' Grady", "Creative Developer", "Problem Solver", "Versatile Engineer"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </Typography>
+
+      <Typography sx={{ fontSize: "32px", color: "white", mt: 2 }} id="home-title">
+        Software Engineer | Full-Stack & Mobile
+      </Typography>
+
+      <Typography variant="body1" sx={{ mt: 2, color: 'white', fontSize: '18px', maxWidth: 600 }}>
+        I design and develop scalable, user-focused applications with a passion for performance and clean code.
+      </Typography>
+
+      <Stack
+        direction="row"
+        spacing={4}
+        mt={6}
+        divider={<Divider orientation="vertical" color="white" flexItem />}
+        justifyContent="center"
+      >
+        <IconButton href="https://github.com/Grady253" target="_blank" rel="noreferrer" sx={{ color: "white" }}>
+          <GitHubIcon sx={{ fontSize: "36px" }} />
+        </IconButton>
+        <Button
+          id="resume"
+          sx={{ border: "solid 1px", px: 4, py: 1.5 }}
+          size="medium"
+          variant="contained"
+          onClick={onButtonClick}
         >
-          <IconButton sx={{ color: "black" }}>
-            <a
-              href="https://github.com/Grady253"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ color: "white" }}
-            >
-              <GitHubIcon sx={{ fontSize: "40px" }} />
-            </a>
-          </IconButton>
-          <Button
-            id="resume"
-            sx={{ border: "solid 1px" }}
-            size="medium"
-            variant="contained"
-            onClick={onButtonClick}
-          >
-            Resume
-          </Button>
-          <IconButton sx={{ color: "black" }}>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/andre-grady-a70237190/"
-              sx={{ color: "#0A66C2" }}
-            >
-              <LinkedInIcon sx={{ fontSize: "40px" }} />
-            </a>
-          </IconButton>
-        </Stack>
+          Download Resume
+        </Button>
+        <IconButton href="https://www.linkedin.com/in/andre-grady-a70237190/" target="_blank" rel="noreferrer" sx={{ color: "#0A66C2" }}>
+          <LinkedInIcon sx={{ fontSize: "36px" }} />
+        </IconButton>
+      </Stack>
+
+      <Box mt={10}>
         <IconButton>
-          <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+          <Link to="about" spy={true} smooth={true} offset={0} duration={600}>
             <KeyboardArrowDownIcon
-              sx={{
-                fontSize: "90px",
-                color: "white",
-                justifyContent: "center",
-                mt: "200px",
-              }}
+              sx={{ fontSize: "80px", color: "white" }}
               id="arrow"
             />
           </Link>
         </IconButton>
-      </section>
-    </Container>
+      </Box>
+    </Box>
   );
 }

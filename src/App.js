@@ -1,6 +1,6 @@
 import "./App.css";
-import { ThemeProvider } from "@emotion/react";
-import { Container, createTheme } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { CssBaseline, Box } from "@mui/material";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -19,16 +19,17 @@ const theme = createTheme({
 
 function App() {
   return (
-      <div className="App">
-    <ThemeProvider theme={theme}>
-        <Container maxWidth>
+    <div className="App">
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Box>
           <Home />
           <About />
           <Portfolio />
           <Contact />
-        </Container>
-    </ThemeProvider>
-      </div>
+        </Box>
+      </ThemeProvider>
+    </div>
   );
 }
 

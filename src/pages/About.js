@@ -1,89 +1,135 @@
 import * as React from "react";
-import { Typography, Container, IconButton, Box, Grid } from "@mui/material";
+import {
+  Typography,
+  Container,
+  IconButton,
+  Box,
+  Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import CodeIcon from "@mui/icons-material/Code";
 import { Link } from "react-scroll/modules";
 import Andre from "../photos/Andre.png";
 
 export default function About() {
+  const techStack = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "NPM",
+    "jQuery",
+    "MySQL",
+    "MongoDB",
+    "React Native",
+    "CI/CD",
+  ];
+
   return (
-    <Container maxWidth="xl">
-      <div id="about">
+    <Box
+      id="about"
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
+      <Container maxWidth="xl">
         <Typography
           variant="h2"
           color="white"
           id="about-title"
-          sx={{ mb: 6, mt: 45, fontWeight: "bold" }}
+          sx={{ mb: 6, fontWeight: "bold", textAlign: "center" }}
         >
           About Me
         </Typography>
-        <section className="about-Me">
-          <Grid container spacing={3} justifyContent="space-evenly">
-          <Grid item xs={12} sm={8} md={4}>
-          <div id="about-picture">
-            <img alt="Andre sitting down" src={Andre} id="andre" />
-          </div>
+        <Grid container spacing={6} justifyContent="center" alignItems="center">
+          <Grid item xs={12} sm={6} md={4}>
+            <Box display="flex" justifyContent="center">
+              <img
+                alt="Andre Grady"
+                src={Andre}
+                id="andre"
+                style={{ borderRadius: "12px", width: "100%" }}
+              />
+            </Box>
           </Grid>
-          <Grid item xs={12} sm={8} md={4} >
-          <div id="about-Text">
-            <Box >
-              <Typography color="white" component='p' sx={{ fontSize: "23px" }}>
+          <Grid item xs={12} sm={6} md={6}>
+            <Box>
+              <Typography
+                color="white"
+                component="div"
+                sx={{ fontSize: "18px", lineHeight: 1.8 }}
+              >
                 <p>
-                  Hi, my name is Andre' Grady. I'm a 24 year old software
-                  engineer who recently graduated from the intensive University
-                  Of Washington full-stack coding bootcamp. I'm actively seeking
-                  an opportunity to showcase my front-end web development
-                  talents.
-                </p>
-
-                <p>
-                  I have a strong desire for developing the fastest, most
-                  efficient, and secure application. Using my skills, I plan on
-                  maintaining a creative and satisfying user interface. I look
-                  forward to being an asset to the team.
+                  Hi, I'm <strong>Andre' Grady</strong> — a passionate software
+                  engineer specializing in full-stack web and mobile
+                  development.
                 </p>
                 <p>
-                  Outside of coding, I enjoy playing video games, watching football, enjoying nature,
-                  reading books and cooking.
+                  I currently work at <strong>Sinclair Digital</strong> where I
+                  help build and maintain mobile applications across 74 news
+                  stations nationwide. My focus is on performance, clean
+                  architecture, and delivering seamless user experiences.
                 </p>
                 <p>
-                  <u>Here are a few of the technologies I've worked with:</u>
-                  <ul id="tech-list">
-                    <li>Html</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>React Js</li>
-                    <li>Node Js</li>
-                    <li>NPM</li>
-                    <li>JQuery</li>
-                    <li>MySQL</li>
-                    <li>MongoDb</li>
-                  </ul>
+                  I take pride in crafting applications that are fast, scalable,
+                  and intuitive — from clean UI components to robust backend
+                  integrations.
+                </p>
+                <p>
+                  Outside of work, I enjoy gaming, football, exploring nature,
+                  and reading about emerging tech.
                 </p>
               </Typography>
+              <Typography color="white" sx={{ mt: 3, fontWeight: "bold" }}>
+                Technologies I work with:
+              </Typography>
+              <List
+                dense
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  color: "white",
+                  mt: 1,
+                  pl: 0,
+                }}
+              >
+                {techStack.map((tech) => (
+                  <ListItem key={tech} sx={{ width: "auto", minWidth: "120px" }}>
+                    <ListItemIcon>
+                      <CodeIcon sx={{ color: "#F2AF29" }} />
+                    </ListItemIcon>
+                    <ListItemText primary={tech} />
+                  </ListItem>
+                ))}
+              </List>
             </Box>
-          </div>
           </Grid>
-          </Grid>
-        </section>
-        <IconButton>
-          <Link
-            to="portfolio"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            <KeyboardArrowDownIcon
-              sx={{
-                fontSize: "90px",
-                color: "white",
-                justifyContent: "center",
-              }}
-              id="arrow"
-            />
-          </Link>
-        </IconButton>
-      </div>
-    </Container>
+        </Grid>
+        <Box display="flex" justifyContent="center" mt={4}>
+          <IconButton>
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <KeyboardArrowDownIcon
+                sx={{ fontSize: "90px", color: "white" }}
+                id="arrow"
+              />
+            </Link>
+          </IconButton>
+        </Box>
+      </Container>
+    </Box>
   );
 }
