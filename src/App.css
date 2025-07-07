@@ -12,6 +12,14 @@
   width: 100%;
 }
 
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+#about-title, #home-title {
+  font-family: 'Quicksand', sans-serif;
+}
+
 .home {
   margin-top: 250px;
 }
@@ -70,6 +78,8 @@ a:hover,
   display: flex;
   align-items: center;
 }
+
+
 
 #cardBtn {
   display: flex;

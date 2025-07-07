@@ -2,6 +2,9 @@ import Planner from "../photos/DailyPlanner.png";
 import Music from "../photos/Music-Match.png";
 import Generator from "../photos/PasswordGenerator.png";
 import Quiz from "../photos/JavascriptQuiz.png";
+import socialCard from "../photos/socialCard.png";
+import dateNight from "../photos/dateNight.png";
+import trueAgent from "../photos/TrueAgent.png";
 
 
 const data = [
@@ -39,6 +42,29 @@ const data = [
     image:Quiz,
     repository:"https://github.com/Grady253/timed_quiz",
     url:"https://grady253.github.io/timed_quiz/"
+  },
+  {
+    id:5,
+    title:"Mobile Social Card",
+    description:"An application where the user can have multiple links to all socials for easier navagation.",
+    image:socialCard,
+    repository:"https://github.com/Grady253/link-Tree",
+    url:"https://grady253.github.io/link-Tree/"
+  },
+  {
+    id:6,
+    title:"Honey & Moon",
+    description:"Having a hard time planning dates? No need to stress anymore.",
+    image:dateNight,
+    url:"https://grady253.github.io/landing-page/"
+  },
+  {
+    id:7,
+    title:"True Agent",
+    description:"Find your real estate agent at the location you want to move.",
+    image:trueAgent,
+    repository:"https://github.com/Grady253/true-agent",
+    url:"https://grady253.github.io/true-agent/"
   }
 ];
 
