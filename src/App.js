@@ -21,7 +21,7 @@ function App() {
   return (
       <div className="App">
     <ThemeProvider theme={theme}>
-        <Container maxWidth>
+        <Container maxWidth={false}>
           <Home />
           <About />
           <Portfolio />

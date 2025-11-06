@@ -8,12 +8,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  overflow-x: hidden;
 }
 
 p {
   font-family: 'Raleway', sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #about-title, #home-title {
@@ -21,7 +28,18 @@ p {
 }
 
 .home {
-  margin-top: 250px;
+  margin-top: 150px;
+  padding: 20px 0;
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    margin-top: 100px;
+  }
 }
 
 #home-title {
@@ -56,11 +74,8 @@ a:hover,
     width: 100%;
     object-fit: cover;
   }
-  .home {
-    margin-top: 100px;
-  }
   #arrow {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
@@ -75,8 +90,22 @@ a:hover,
 }
 
 .about-Me {
-  display: flex;
-  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-Me {
+    padding: 10px 0;
+  }
+}
+
+#about {
+  text-align: center;
+}
+
+#about-Text {
+  text-align: left;
 }
 
 
@@ -88,7 +117,34 @@ a:hover,
 
 #tech-list {
   list-style-type: ">";
-  columns: 3 100px;
+  columns: 3 150px;
+  padding-left: 25px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 2;
+  font-size: 16px;
+}
+
+#tech-list li {
+  margin-bottom: 8px;
+  padding-left: 10px;
+  break-inside: avoid;
+}
+
+@media only screen and (max-width: 768px) {
+  #tech-list {
+    columns: 2 140px;
+    line-height: 1.8;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #tech-list {
+    columns: 1;
+    padding-left: 20px;
+    line-height: 1.8;
+  }
 }
 
 #card-image {
@@ -98,28 +154,46 @@ a:hover,
 }
 
 #contact {
-  height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact {
+    min-height: 70vh;
+  }
 }
 
 #contactHeader {
-  margin-top: 65px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #contactText {
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0 20px;
 }
 
 #contactBtn {
-  margin-top: 40px;
-  height: 90px;
-  width: 190px;
-  font-size: 20px;
+  margin-top: 20px;
+  height: 60px;
+  min-width: 160px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #contactBtn {
+    height: 50px;
+    min-width: 140px;
+    font-size: 14px;
+  }
 }
 
 #contactBtn:hover {

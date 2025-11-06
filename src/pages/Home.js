@@ -5,46 +5,64 @@ import {
   IconButton,
   Container,
   Button,
+  Menu,
+  MenuItem,
 } from "@mui/material";
 import { Link } from "react-scroll/modules";
 import TypewriterComponent from "typewriter-effect";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import DescriptionIcon from "@mui/icons-material/Description";
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import { useState } from "react";
 
 export default function Home() {
-  const onButtonClick = () => {
-    fetch("Resume.pdf").then((response) => {
-      response.blob().then((blob) => {
-        const pdfURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = pdfURL;
-        alink.download = "Resume.pdf";
-        alink.click();
-      });
-    });
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+
+  const handleResumeClick = (e) => {
+    setAnchorEl(e.currentTarget);
+  };
+
+  const handleResumeClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleResumeDownload = () => {
+    const resumeUrl = `${process.env.PUBLIC_URL || ""}/Resume.pdf`;
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Andre_Grady_Resume.pdf";
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    handleResumeClose();
   };
   return (
     <Container maxWidth="md">
       <section className="home">
-        <Typography sx={{  typography:{ xs:'h3', sm:'h2', md:'h1'} }} color={"primary.main"}>
+        <Typography sx={{  typography:{ xs:'h3', sm:'h2', md:'h1'} }} color={"primary.main"} component="div">
           <TypewriterComponent
             options={{
-              strings: ["Andre' Grady", "Creative", "Determined", "Versatile"],
+              strings: ["Andre' Grady", "Mobile Developer", "Creative", "Determined"],
               autoStart: true,
               loop: true,
             }}
           />
         </Typography>
-        <Typography sx={{ fontSize: "50px", color: "white" }} id="home-title">
-          Software Engineer
+        <Typography sx={{ fontSize: { xs: "28px", sm: "40px", md: "50px" }, color: "white", px: 2 }} id="home-title" component="div">
+          React Native Mobile Engineer
         </Typography>
         <Stack
-          direction="row"
-          spacing={4}
+          direction={{ xs: "column", sm: "row" }}
+          spacing={{ xs: 2, sm: 4 }}
           mt={6}
-          divider={<Divider orientation="vertical" color="white" flexItem />}
-          style={{ justifyContent: "center" }}
+          alignItems="center"
+          divider={<Divider orientation="vertical" color="white" flexItem sx={{ display: { xs: 'none', sm: 'block' } }} />}
+          sx={{ justifyContent: "center", px: 2 }}
         >
           <IconButton sx={{ color: "black" }}>
             <a
@@ -61,15 +79,43 @@ export default function Home() {
             sx={{ border: "solid 1px" }}
             size="medium"
             variant="contained"
-            onClick={onButtonClick}
+            onClick={handleResumeClick}
+            startIcon={<DescriptionIcon />}
+            aria-controls={open ? "resume-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
           >
             Resume
           </Button>
+          <Menu
+            id="resume-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleResumeClose}
+            MenuListProps={{
+              "aria-labelledby": "resume-button",
+            }}
+          >
+            <MenuItem 
+              component="a"
+              href={`${process.env.PUBLIC_URL || ""}/Resume.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleResumeClose}
+            >
+              <OpenInNewIcon sx={{ mr: 1 }} />
+              View Resume
+            </MenuItem>
+            <MenuItem onClick={handleResumeDownload}>
+              <FileDownloadIcon sx={{ mr: 1 }} />
+              Download PDF
+            </MenuItem>
+          </Menu>
           <IconButton sx={{ color: "black" }}>
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://www.linkedin.com/in/andre-grady-a70237190/"
+              href="https://www.linkedin.com/in/andre-d-grady/"
               sx={{ color: "#0A66C2" }}
             >
               <LinkedInIcon sx={{ fontSize: "40px" }} />
@@ -80,10 +126,10 @@ export default function Home() {
           <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
             <KeyboardArrowDownIcon
               sx={{
-                fontSize: "90px",
+                fontSize: { xs: "60px", sm: "75px", md: "90px" },
                 color: "white",
                 justifyContent: "center",
-                mt: "200px",
+                mt: { xs: 4, sm: 6, md: 8 },
               }}
               id="arrow"
             />

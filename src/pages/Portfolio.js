@@ -24,12 +24,12 @@ export default function Portfolio() {
           variant="h2"
           color="white"
           id="about-title"
-          sx={{mt: 25, fontWeight: "bold" }}
+          sx={{mt: { xs: 10, sm: 15, md: 20 }, fontWeight: "bold", px: 2 }}
         >
           Portfolio
         </Typography>
-        <Typography variant="h5" color='white' sx={{mb: 10, mt:4}}>
-          Below are a couple of my personal project that I've built.
+        <Typography variant="h5" color='white' sx={{mb: { xs: 6, sm: 8, md: 10 }, mt: { xs: 2, sm: 3, md: 4 }, px: 2 }}>
+          Below are some of my mobile and web projects that showcase my React Native development skills.
         </Typography>
         <Box
           component="div"
@@ -39,10 +39,10 @@ export default function Portfolio() {
             alignItems: "center",
           }}
         >
-          <Grid container spacing={4}>
-            {projectData.map(({ title, description, image, repository, url }) => (
-              <Grid item xs={10} sm={6} md={4}>
-                <Card sx={{ width: 345 }} >
+          <Grid container spacing={4} sx={{ px: { xs: 2, sm: 0 } }}>
+            {projectData.map(({ id, title, description, image, repository, url }) => (
+              <Grid item xs={12} sm={6} md={4} key={id} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Card sx={{ width: '100%', maxWidth: 345 }} >
                   <CardActionArea>
                     <CardMedia
                       id="card-image"
@@ -64,22 +64,26 @@ export default function Portfolio() {
                       </Typography>
                     </CardContent>
                     <CardActions id="cardBtn">
-                      <Button
-                        size="medium"
-                        variant="contained"
-                        href={url}
-                        target="_blank"
-                      >
-                        Demo
-                      </Button>
-                      <Button
-                        size="medium"
-                        variant="contained"
-                        href={repository}
-                        target="_blank"
-                      >
-                        Repo
-                      </Button>
+                      {url && (
+                        <Button
+                          size="medium"
+                          variant="contained"
+                          href={url}
+                          target="_blank"
+                        >
+                          View App
+                        </Button>
+                      )}
+                      {repository && (
+                        <Button
+                          size="medium"
+                          variant="contained"
+                          href={repository}
+                          target="_blank"
+                        >
+                          Code
+                        </Button>
+                      )}
                     </CardActions>
                   </CardActionArea>
                 </Card>
@@ -97,9 +101,10 @@ export default function Portfolio() {
           >
             <KeyboardArrowDownIcon
               sx={{
-                fontSize: "90px",
+                fontSize: { xs: "60px", sm: "75px", md: "90px" },
                 color: "white",
                 justifyContent: "center",
+                mt: { xs: 4, sm: 6 },
               }}
               id="arrow"
             />
